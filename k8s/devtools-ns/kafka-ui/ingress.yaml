@@ -10,10 +10,10 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-    - kafka-ui.mandlebulbtech.in
+    - kafka-ui.delvex.io
     secretName: kafka-ui-tls
   rules:
-  - host: kafka-ui.mandlebulbtech.in
+  - host: kafka-ui.delvex.io
     http:
       paths:
       - path: /

@@ -10,10 +10,10 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-    - pgadmin.mandlebulbtech.in
+    - pgadmin.delvex.io
     secretName: pgadmin-tls
   rules:
-  - host: pgadmin.mandlebulbtech.in
+  - host: pgadmin.delvex.io
     http:
       paths:
       - path: /

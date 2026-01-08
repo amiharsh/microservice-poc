@@ -10,10 +10,10 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-    - mongo-express.mandlebulbtech.in
+    - mongo-express.delvex.io
     secretName: mongo-express-tls
   rules:
-  - host: mongo-express.mandlebulbtech.in
+  - host: mongo-express.delvex.io
     http:
       paths:
       - path: /

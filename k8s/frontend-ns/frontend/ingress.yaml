@@ -10,10 +10,10 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-    - microservice-frontend.mandlebulbtech.in
+    - microservice-frontend.delvex.io
     secretName: frontend-tls
   rules:
-  - host: microservice-frontend.mandlebulbtech.in
+  - host: microservice-frontend.delvex.io
     http:
       paths:
       - path: /
