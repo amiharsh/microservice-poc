@@ -10,21 +10,10 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-    - mandlebulbtech.in
-    - www.mandlebulbtech.in
+    - microservice-frontend.mandlebulbtech.in
     secretName: frontend-tls
   rules:
-  - host: mandlebulbtech.in
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: frontend
-            port:
-              number: 3000
-  - host: www.mandlebulbtech.in
+  - host: microservice-frontend.mandlebulbtech.in
     http:
       paths:
       - path: /

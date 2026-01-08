@@ -86,6 +86,10 @@ jobs:
       run: |
         kubectl apply -f k8s/namespaces/
 
+    - name: Deploy Cluster Issuer
+      run: |
+        kubectl apply -f k8s/cert-manager/cluster-issuer.yaml
+
     - name: Deploy Secrets and ConfigMaps
       run: |
         # Deploy secrets and configmaps for all namespaces
